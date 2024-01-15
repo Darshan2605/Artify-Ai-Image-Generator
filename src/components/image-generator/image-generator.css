@@ -1,0 +1,73 @@
+.image-generator {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  align-items: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+.header {
+  font-weight: 500;
+  font-size: 4rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 0.4rem 2rem;
+
+  color: #f0ebf5;
+}
+.art {
+  font-size: 5rem;
+  font-weight: 600;
+  color: #e000bf;
+}
+.art-descr {
+  font-size: 1.3rem;
+  color: #f0ebf5;
+}
+.image-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.image img {
+  width: 25rem;
+  height: 25rem;
+  border-radius: 15px;
+  border: 4px solid #ff00d9;
+}
+.searchBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 50px;
+  width: 40rem;
+  height: 3rem;
+  background-color: #d2b9fd;
+  color: #6a04c3;
+}
+.search {
+  width: 20rem;
+  height: 2.4rem;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 600;
+  margin-left: 2rem;
+}
+.generate-btn {
+  font-size: 1.2rem;
+  background-color: #c7009c;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: aliceblue;
+  font-weight: 600;
+  border-radius: 0 50px 50px 0;
+  width: 200px;
+  margin-left: 5rem;
+  cursor: pointer;
+}

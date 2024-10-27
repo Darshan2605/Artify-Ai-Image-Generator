@@ -1,62 +1,68 @@
 .image-generator {
   display: flex;
   flex-direction: column;
-  margin: auto;
   align-items: center;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin: auto;
   gap: 1rem;
+  padding: 1rem;
 }
+
 .header {
   font-weight: 500;
   font-size: 4rem;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding: 0.4rem 2rem;
-
   color: #f0ebf5;
 }
+
 .art {
   font-size: 5rem;
   font-weight: 600;
   color: #e000bf;
 }
+
 .art-descr {
   font-size: 1.3rem;
   color: #f0ebf5;
+  text-align: center; /* Ensures centered text on all devices */
 }
+
 .image-loading {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 1rem;
 }
+
 .image img {
   width: 25rem;
   height: 25rem;
   border-radius: 15px;
   border: 4px solid #ff00d9;
 }
+
 .searchBox {
   display: flex;
-  justify-content: space-around;
   align-items: center;
   border-radius: 50px;
   width: 40rem;
   height: 3rem;
   background-color: #d2b9fd;
   color: #6a04c3;
+  overflow: hidden; /* Keeps button aligned within the box */
 }
+
 .search {
-  width: 20rem;
-  height: 2.4rem;
+  flex: 1; /* Fills available space */
+  height: 100%;
   border: none;
   outline: none;
   background-color: transparent;
   font-size: 1.2rem;
   text-align: center;
   font-weight: 600;
-  margin-left: 2rem;
+  padding-left: 1rem;
 }
+
 .generate-btn {
   font-size: 1.2rem;
   background-color: #c7009c;
@@ -66,8 +72,77 @@
   justify-content: center;
   color: aliceblue;
   font-weight: 600;
-  border-radius: 0 50px 50px 0;
-  width: 200px;
-  margin-left: 5rem;
+  padding: 0 1.5rem;
   cursor: pointer;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .header {
+    font-size: 3rem;
+  }
+
+  .art {
+    font-size: 4rem;
+  }
+
+  .art-descr {
+    font-size: 1.1rem;
+    padding: 0 1rem;
+  }
+
+  .image img {
+    width: 20rem;
+    height: 20rem;
+  }
+
+  .searchBox {
+    width: 90%;
+    height: 2.5rem;
+  }
+
+  .search {
+    font-size: 1rem;
+    padding-left: 0.5rem;
+  }
+
+  .generate-btn {
+    width: 120px;
+    font-size: 1rem;
+    padding: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 2.5rem;
+  }
+
+  .art {
+    font-size: 3.5rem;
+  }
+
+  .art-descr {
+    font-size: 1rem;
+  }
+
+  .image img {
+    width: 15rem;
+    height: 15rem;
+  }
+
+  .searchBox {
+    width: 100%;
+    height: 2rem;
+  }
+
+  .search {
+    font-size: 0.9rem;
+  }
+
+  .generate-btn {
+    width: 100px;
+    font-size: 0.9rem;
+    padding: 0;
+  }
 }
